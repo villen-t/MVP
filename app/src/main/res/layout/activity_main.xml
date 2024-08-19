@@ -7,14 +7,25 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".main.MainActivity">
 
     <Button
-        android:id="@+id/btn_get_banner_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="getBannerInfo"
-        android:text="@string/get_banner_info" />
+        android:onClick="getNetworkInfo"
+        android:text="@string/get_network_info" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getLocalInfo"
+        android:text="@string/get_local_info" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearLocalInfo"
+        android:text="@string/clear_local_info" />
 
     <TextView
         android:id="@+id/tv_banner_info"
