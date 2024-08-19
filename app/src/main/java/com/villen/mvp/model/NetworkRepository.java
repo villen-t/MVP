@@ -15,28 +15,28 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Model
+ * Network Repository
  */
-public final class Repository {
+public final class NetworkRepository {
 
     private ApiService mService;
 
-    private Repository() {
+    private NetworkRepository() {
         createService();
     }
 
-    public static Repository getInstance() {
+    public static NetworkRepository getInstance() {
         return SingletonHolder.sInstance;
     }
 
     private static final class SingletonHolder {
-        private static final Repository sInstance = new Repository();
+        private static final NetworkRepository sInstance = new NetworkRepository();
     }
 
     /**
      * 请求 banner 数据
      */
-    public void getBanners(ResponseCallback<List<Banner>> callback) {
+    public void requestBanners(ResponseCallback<List<Banner>> callback) {
         mService.getBanners().enqueue(new Callback<BaseResponse<List<Banner>>>() {
             @Override
             public void onResponse(Call<BaseResponse<List<Banner>>> call, Response<BaseResponse<List<Banner>>> response) {
