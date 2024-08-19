@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MVP</string>
+    <string name="get_banner_info">获取用户信息</string>
+</resources>
