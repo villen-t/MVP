@@ -6,4 +6,4 @@
 [感谢 wanandroid 提供的开放API](https://www.wanandroid.com)
 
 参考：
-[MVC、MVP、MVVM，我到底该怎么选？](https://mp.weixin.qq.com/s?__biz=MzIwMTAzMTMxMg==&mid=2649492883&idx=1&sn=2c206702fe1dd357ed65052bb9080488&scene=19#wechat_redirect)
+[一个小例子彻底搞懂 MVP](https://mp.weixin.qq.com/s?__biz=MzIwMTAzMTMxMg==&mid=2649492837&idx=1&sn=631988689fe5bd6f9aadb6bf123051ed&scene=19#wechat_redirect)
