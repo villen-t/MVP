@@ -26,6 +26,7 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
         // Activity 销毁时，需要调用 detachView，防止内存泄漏
         if (mPresenter != null) {
             mPresenter.detachView();
+            mPresenter.onDestroy();
             mPresenter = null;
         }
     }
