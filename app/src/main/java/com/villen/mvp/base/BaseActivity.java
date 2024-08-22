@@ -1,7 +1,9 @@
 package com.villen.mvp.base;
 
+import android.os.Bundle;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.villen.mvp.contract.base.IPresenter;
@@ -12,7 +14,9 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
 
     protected P mPresenter;
 
-    public BaseActivity() {
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         this.mPresenter = createPresenter();
         mPresenter.attachView(this);
     }
